@@ -18,8 +18,11 @@
 
 const express=require("express");
 const bodyParser=require("body-parser");
+var path = require('path');
+
 // const request=require("request");
 const app=express();
+app.use(express.static(path.resolve('./public')));
 app.use(bodyParser.urlencoded({extended:true}));
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html");
