@@ -4,7 +4,7 @@
   "description": "Main project repo for weddingzin project",
   "main": "index.js",
   "scripts": {
-    "index.html",
+    "index.html": "node index.js"
   },
   "keywords": [],
   "author": "",
